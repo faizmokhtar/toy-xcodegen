@@ -10,22 +10,58 @@
 		BF_118417385526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_707311538451 /* AppDelegate.swift */; };
 		BF_136849543855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_136606086627 /* Main.storyboard */; };
 		BF_265400587667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = VG_905723594511 /* LaunchScreen.storyboard */; };
+		BF_522683671758 /* toy_xcodegen_uitests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_390229764713 /* toy_xcodegen_uitests.swift */; };
+		BF_572303137880 = {isa = PBXBuildFile; fileRef = FR_202508849641 /* toy-xcodegen-uitests.xctest */; };
 		BF_573426134243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_681417565104 /* ViewController.swift */; };
+		BF_601489582047 /* toy_xcodegen_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FR_349534896368 /* toy_xcodegen_tests.swift */; };
+		BF_706921020585 = {isa = PBXBuildFile; fileRef = FR_857081171147 /* toy-xcodegen-tests.xctest */; };
 		BF_782004081606 = {isa = PBXBuildFile; fileRef = FR_453717238330 /* toy-xcodegen.app */; };
 		BF_891140737543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FR_415714837793 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CIP_27275927222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P_4537172383308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NT_453717238330;
+			remoteInfo = "toy-xcodegen";
+		};
+		CIP_78999952590 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P_4537172383308 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NT_453717238330;
+			remoteInfo = "toy-xcodegen";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		FR_136606086627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FR_181324244854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FR_202508849641 /* toy-xcodegen-uitests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "toy-xcodegen-uitests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_255085464949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FR_349534896368 /* toy_xcodegen_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toy_xcodegen_tests.swift; sourceTree = "<group>"; };
+		FR_390229764713 /* toy_xcodegen_uitests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toy_xcodegen_uitests.swift; sourceTree = "<group>"; };
 		FR_415714837793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FR_453717238330 /* toy-xcodegen.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "toy-xcodegen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_681417565104 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FR_707311538451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FR_721189220908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FR_857081171147 /* toy-xcodegen-tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "toy-xcodegen-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FR_905723594511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		G_2025088496418 /* toy-xcodegen-uitests */ = {
+			isa = PBXGroup;
+			children = (
+				FR_181324244854 /* Info.plist */,
+				FR_390229764713 /* toy_xcodegen_uitests.swift */,
+			);
+			path = "toy-xcodegen-uitests";
+			sourceTree = "<group>";
+		};
 		G_4537172383308 /* toy-xcodegen */ = {
 			isa = PBXGroup;
 			children = (
@@ -44,12 +80,28 @@
 			children = (
 				G_8620238527590 /* Products */,
 				G_4537172383308 /* toy-xcodegen */,
+				G_8570811711472 /* toy-xcodegen-tests */,
+				G_2025088496418 /* toy-xcodegen-uitests */,
 			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		G_8570811711472 /* toy-xcodegen-tests */ = {
+			isa = PBXGroup;
+			children = (
+				FR_721189220908 /* Info.plist */,
+				FR_349534896368 /* toy_xcodegen_tests.swift */,
+			);
+			path = "toy-xcodegen-tests";
 			sourceTree = "<group>";
 		};
 		G_8620238527590 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FR_857081171147 /* toy-xcodegen-tests.xctest */,
+				FR_202508849641 /* toy-xcodegen-uitests.xctest */,
 				FR_453717238330 /* toy-xcodegen.app */,
 			);
 			name = Products;
@@ -58,6 +110,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		NT_202508849641 /* toy-xcodegen-uitests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CL_202508849641 /* Build configuration list for PBXNativeTarget "toy-xcodegen-uitests" */;
+			buildPhases = (
+				SBP_20250884964 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TD_854021588899 /* PBXTargetDependency */,
+			);
+			name = "toy-xcodegen-uitests";
+			productName = "toy-xcodegen-uitests";
+			productReference = FR_202508849641 /* toy-xcodegen-uitests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		NT_453717238330 /* toy-xcodegen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = "CL_453717238330-1" /* Build configuration list for PBXNativeTarget "toy-xcodegen" */;
@@ -74,6 +142,22 @@
 			productReference = FR_453717238330 /* toy-xcodegen.app */;
 			productType = "com.apple.product-type.application";
 		};
+		NT_857081171147 /* toy-xcodegen-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CL_857081171147 /* Build configuration list for PBXNativeTarget "toy-xcodegen-tests" */;
+			buildPhases = (
+				SBP_85708117114 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				TD_669509581248 /* PBXTargetDependency */,
+			);
+			name = "toy-xcodegen-tests";
+			productName = "toy-xcodegen-tests";
+			productReference = FR_857081171147 /* toy-xcodegen-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +165,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					NT_202508849641 = {
+						TestTargetID = NT_453717238330;
+					};
+				};
 			};
 			buildConfigurationList = CL_453717238330 /* Build configuration list for PBXProject "toy-xcodegen" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -94,6 +183,8 @@
 			projectRoot = "";
 			targets = (
 				NT_453717238330 /* toy-xcodegen */,
+				NT_857081171147 /* toy-xcodegen-tests */,
+				NT_202508849641 /* toy-xcodegen-uitests */,
 			);
 		};
 /* End PBXProject section */
@@ -112,6 +203,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		SBP_20250884964 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF_522683671758 /* toy_xcodegen_uitests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		SBP_45371723833 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,7 +220,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		SBP_85708117114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF_601489582047 /* toy_xcodegen_tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		TD_669509581248 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT_453717238330 /* toy-xcodegen */;
+			targetProxy = CIP_27275927222 /* PBXContainerItemProxy */;
+		};
+		TD_854021588899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NT_453717238330 /* toy-xcodegen */;
+			targetProxy = CIP_78999952590 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		VG_136606086627 /* Main.storyboard */ = {
@@ -201,6 +321,58 @@
 			};
 			name = Debug;
 		};
+		BC_539567851501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "toy-xcodegen-tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faizmokhtar.toy-xcodegen-tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC_576217485844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "toy-xcodegen-uitests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faizmokhtar.toy-xcodegen-uitests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "toy-xcodegen";
+			};
+			name = Debug;
+		};
+		BC_577163782038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "toy-xcodegen-uitests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faizmokhtar.toy-xcodegen-uitests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "toy-xcodegen";
+			};
+			name = Release;
+		};
+		BC_664545222133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "toy-xcodegen-tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faizmokhtar.toy-xcodegen-tests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BC_665464942358 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -210,7 +382,7 @@
 				INFOPLIST_FILE = "toy-xcodegen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xcodegen.toy-xcodegen";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faizmokhtar.toy-xcodegen";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -225,7 +397,7 @@
 				INFOPLIST_FILE = "toy-xcodegen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xcodegen.toy-xcodegen";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faizmokhtar.toy-xcodegen";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CL_202508849641 /* Build configuration list for PBXNativeTarget "toy-xcodegen-uitests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_576217485844 /* Debug */,
+				BC_577163782038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
 		CL_453717238330 /* Build configuration list for PBXProject "toy-xcodegen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -298,6 +479,15 @@
 			buildConfigurations = (
 				BC_665464942358 /* Debug */,
 				BC_767429733291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
+		CL_857081171147 /* Build configuration list for PBXNativeTarget "toy-xcodegen-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC_539567851501 /* Debug */,
+				BC_664545222133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "";

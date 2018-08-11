@@ -1,9 +1,31 @@
 name: toy-xcodegen
 options:
   bundleIdPrefix: com.faizmokhtar
+  settingPresets: all
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+  xcodeVersion: "9.4.1"
+  groupSortPosition: top
 targets:
   toy-xcodegen:
     type: application
     platform: iOS
     deploymentTarget: "11.0"
     sources: [toy-xcodegen]
+  toy-xcodegen-tests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources:
+      - path: toy-xcodegen-tests
+    dependencies:
+      - target: toy-xcodegen
+  toy-xcodegen-uitests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: toy-xcodegen-uitests
+    dependencies:
+      - target: toy-xcodegen
+
