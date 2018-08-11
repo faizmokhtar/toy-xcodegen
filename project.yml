@@ -1,0 +1,9 @@
+name: toy-xcodegen
+options:
+  bundleIdPrefix: com.faizmokhtar
+targets:
+  toy-xcodegen:
+    type: application
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources: [toy-xcodegen]
