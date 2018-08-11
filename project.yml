@@ -6,13 +6,21 @@ options:
   indentWidth: 2
   tabWidth: 2
   xcodeVersion: "9.4.1"
-  groupSortPosition: top
+  groupSortPosition: none
 targets:
   toy-xcodegen:
     type: application
     platform: iOS
     deploymentTarget: "11.0"
     sources: [toy-xcodegen]
+    scheme:
+      gatherCoverageData: true
+      testTargets:
+        - toy-xcodegen-tests
+      configVariants:
+        - Development
+        - Staging
+        - Production
   toy-xcodegen-tests:
     type: bundle.unit-test
     platform: iOS
@@ -28,4 +36,10 @@ targets:
       - path: toy-xcodegen-uitests
     dependencies:
       - target: toy-xcodegen
-
+configs:
+  Development Debug: debug
+  Staging Debug: debug
+  Production debug: debug
+  Development Release: release
+  Staging Release: release
+  Production Release: release
